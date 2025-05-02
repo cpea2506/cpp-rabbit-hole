@@ -1,0 +1,18 @@
+---
+  BasedOnStyle: LLVM
+  AccessModifierOffset: -2
+  AlignTrailingComments: true
+  AllowAllParametersOfDeclarationOnNextLine: false
+  AlwaysBreakTemplateDeclarations: No
+  BreakBeforeBraces: Attach
+  ColumnLimit: 120
+  ConstructorInitializerAllOnOneLineOrOnePerLine: true
+  IncludeBlocks: Regroup
+  IndentPPDirectives: AfterHash
+  IndentWidth: 4
+  AllowShortBlocksOnASingleLine: Empty
+  AllowShortFunctionsOnASingleLine: Empty
+  NamespaceIndentation: All
+  BreakBeforeBinaryOperators: All
+  BreakBeforeTernaryOperators: 'true'
+...
