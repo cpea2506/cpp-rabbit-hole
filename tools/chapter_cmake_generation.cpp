@@ -21,7 +21,7 @@ void generate_cmakelists(const fs::path &chapter_path, const std::string &chapte
     fs::path cmake_path = chapter_path / cmake_filename;
 
     if (fs::exists(cmake_path)) {
-        std::cout << "[SKIP] " << cmake_path << " already exists." << std::endl;
+        std::cout << "[SKIP] " << cmake_path << " already exists.\n";
 
         return;
     }
@@ -29,7 +29,7 @@ void generate_cmakelists(const fs::path &chapter_path, const std::string &chapte
     std::ofstream out(cmake_path);
 
     if (!out) {
-        std::cerr << "[ERROR] Failed to write " << cmake_path << std::endl;
+        std::cerr << "[ERROR] Failed to write " << cmake_path << ".\n";
 
         return;
     }
@@ -42,7 +42,7 @@ void generate_cmakelists(const fs::path &chapter_path, const std::string &chapte
     }
 
     out << content;
-    std::cout << "[GEN]  " << cmake_path << " created." << std::endl;
+    std::cout << "[GEN]  " << cmake_path << " created.\n";
 }
 
 int main() {
@@ -62,7 +62,7 @@ int main() {
         fs::path main_path = entry.path() / main_cpp;
 
         if (!fs::exists(main_path)) {
-            std::cout << "[SKIP] " << name << " has no main.cpp" << std::endl;
+            std::cout << "[SKIP] " << name << " has no main.cpp.\n";
 
             continue;
         }
